@@ -1605,3 +1605,159 @@ section.banner-blog .banner-caption h1 {
         font-size: 32px;
     }
 }
+
+/* 9. portfolio area */
+.portfolio-thumb {
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-thumb::before {
+	background: #111;
+	content: "";
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	transition: all 0.3s ease 0s;
+	visibility: hidden;
+	width: 100%;
+	z-index: 1;
+}
+.portfolio-wrapper:hover .portfolio-thumb::before{opacity: .9;visibility: visible;}
+.portfolio-thumb > img {
+    width: 100%;
+    transition: .3s;
+}
+.portfolio-wrapper:hover .portfolio-thumb > img{transform: scale(1.2)}
+.portfolio-content {
+    left: 0;
+    padding: 30px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .3s;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 9;
+}
+.portfolio-wrapper:hover .portfolio-content{opacity: 1;visibility: visible;}
+.portfolio-wrapper {
+    position: relative;
+}
+.portfolio-content > h3 {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 12px;
+}
+.portfolio-content > h3 a:hover{color: #E41919}
+.portfolio-content span {
+	color: #ddd;
+	font-size: 14px;
+}
+.icon a {
+  display: inline-block;
+  height: 20px;
+  margin-bottom: 10px;
+  position: relative;
+  width: 20px;
+}
+.portfolio-menu > button {
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+	border: medium none;
+	color: #3b3f42;
+	cursor: pointer;
+	font-weight: 600;
+	margin: 0 8px;
+	padding: 0px 5px;
+	text-transform: uppercase;
+	transition: all 0.3s ease 0s;
+	line-height: 1;
+}
+.portfolio-menu > button:focus {
+  outline: 0 none;
+}
+.portfolio-menu > button:hover, .portfolio-menu > button.active {
+	color: #E41919;
+}
+
+/* details */
+.single-portfolio img {
+	width: 100%;
+}
+.portfolio-details-text a {
+	color: #E01919;
+}
+.portfolio-details-text h3 {
+	font-size: 22px;
+	color: #111;
+}
+/* project modal */
+.modal-dialog {
+	max-width: 550px;
+	margin: 1.75rem auto;
+	border-radius: 2px;
+}
+.modal-content {
+	border-radius: 2px;
+}
+.project-media{min-height:300px;background-size:cover;}
+.project-media img {
+	width: 100%;
+}
+.view-project-content {
+	padding-top: 20px;
+}
+.modal-title h2 {
+	font-size: 24px;
+	margin-bottom: 8px;
+}
+.modal-title span {
+	margin-bottom: 15px;
+	display: block;
+	font-weight: 500;
+	color: #E41919;
+}
+.modal-title span{}
+.view-project {
+	padding: 20px;
+}
+.project-info-list li {
+	position: relative;
+	padding: 15px 0;
+	margin: 0 0 4px 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	color: #444;
+	font-weight: 600;
+	font-size: 13px;
+}
+.project-info-list li:last-child {
+	border-bottom: none;
+}
+.project-info-list li span {
+	margin-bottom: 2px;
+	display: block;
+	font-size: 12px;
+	color: #666;
+	font-weight: 400;
+}
+.project-info-list a {
+	color: #E41919;
+}
+/* hire */
+.hire-us h2 {
+	color: #fff;
+	font-weight: 700;
+	line-height: 1.5;
+	margin-bottom: 30px;
+}
+.btn.btn-red {
+	border: 2px solid #E41919;
+	font-weight: 600;
+	background: transparent;
+	padding: 12px 35px;
+}
+.btn.btn-red:hover{background:#E41919;color: #fff }
