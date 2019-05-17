@@ -708,7 +708,7 @@
                     <div class="col">
                         <div class="heading text-center">
                             <h6>Portfolio</h6>
-                            <h2>Work I Have Done</h2>
+                            <h2>Applications I Have Created</h2>
                         </div>
                         <!-- <div class="portfolio-filter text-center">
                             <ul>
@@ -727,12 +727,14 @@
                                 <!-- <img src="img/portfolio/port6.jpg" alt=""> -->
                                                                  <img src="http://www.fubiz.net/wp-content/uploads/2016/05/Nature-Photographed-from-Incredible-Points-of-View10.jpg" alt="">
                             </div>
-                            <div class="portfolio-content">
+                            <a href="#" data-toggle="modal" data-target="#popup-modal6">
+                              <div class="portfolio-content">
                                 <h3>
-                                    <a href="#" data-toggle="modal" data-target="#popup-modal6">Run Tracker</a>
+                                    <div class="portfolio-title">Run Tracker</div>
                                 </h3>
                                 <span>A mobile-responsive run-tracking application that captures real-time data to asist the user in becoming a better runner.</span>
-                            </div>
+                              </div>
+                            </a>
                         </div>
                         <!-- Modal content start -->
                          <div class="modal fade" id="popup-modal6" tabindex="-1" role="dialog" aria-hidden="true">
@@ -778,12 +780,14 @@
                                  <!-- <img src="img/portfolio/port2.jpg" alt=""> -->
                                  <img src="http://www.fubiz.net/wp-content/uploads/2016/05/Nature-Photographed-from-Incredible-Points-of-View10.jpg" alt="">
                              </div>
-                             <div class="portfolio-content">
-                                 <h3>
-                                     <a href="#" data-toggle="modal" data-target="#popup-modal2">Trash Cleanup Locator</a>
+                             <a href="#" data-toggle="modal" data-target="#popup-modal2">
+                               <div class="portfolio-content">
+                                  <h3>
+                                     <div class="portfolio-title">Trash Cleanup Locator</div>
                                  </h3>
                                  <span>A web application that connects volunteers with upcoming trash-cleanup events.</span>
-                             </div>
+                               </div>
+                             </a>
                          </div>
                          <!-- Modal content start -->
                          <div class="modal fade" id="popup-modal2" tabindex="-1" role="dialog" aria-hidden="true">
@@ -828,12 +832,14 @@ Constructed through object-oriented programming to enclose each distinct functio
                                  <!-- <img src="img/portfolio/port4.jpg" alt=""> -->
                                  <img src="http://www.fubiz.net/wp-content/uploads/2016/05/Nature-Photographed-from-Incredible-Points-of-View10.jpg" alt="">
                              </div>
-                             <div class="portfolio-content">
-                                 <h3>
-                                     <a href="#" data-toggle="modal" data-target="#popup-modal4">Bird Match</a>
+                             <a href="#" data-toggle="modal" data-target="#popup-modal4">
+                               <div class="portfolio-content">
+                                  <h3>
+                                     <div class="portfolio-title">Bird Match</div>
                                  </h3>
-                                 <span>A birds themed memory match game with user-determined features and live-updating statistics</span>
-                             </div>
+                                 <span>A birds themed memory match game with user-determined features and live-updating statistics.</span>
+                               </div>
+                             </a>
                          </div>
                          <!-- Modal content start -->
                          <div class="modal fade" id="popup-modal4" tabindex="-1" role="dialog" aria-hidden="true">
@@ -1065,7 +1071,7 @@ Constructed through object-oriented programming to enclose each distinct functio
                                 </div>
                                 <div class="col-md-12 form-group">
                                     <!--message box-->
-                                    <textarea class="form-control con-validate" id="contact-message" placeholder="How can we help you?" rows=6 ></textarea>
+                                    <textarea class="form-control con-validate" id="contact-message" placeholder="Your message:" rows=6 ></textarea>
                                 </div>
                                 <div class="col-md-12 text-center">
                                     <!--contact button-->
@@ -1096,14 +1102,14 @@ Constructed through object-oriented programming to enclose each distinct functio
                         <!--Contant Item-->
                         <div class="contact-info">
                             <h5>Phone No.</h5>
-                            <p>(+1) 562 505 9708</p>
+                            <p id="number-contact"></p>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-4">
                         <!--Contant Item-->
                         <div class="contact-info">
                             <h5>Email</h5>
-                            <p>johnnypham944@gmail.com</p>
+                            <p id="email-contact"></p>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-4">

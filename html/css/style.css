@@ -1047,6 +1047,10 @@ section.services .service-item:hover .icon {
 
 /*============ 8. Portfolio Section ============*/
 
+.portfolio-title:hover {
+  color: red;
+}
+
 section.portfolio .portfolio-filter {
     margin-bottom: 40px;
 }

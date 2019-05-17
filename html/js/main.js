@@ -52,7 +52,9 @@ $(window).on("load", function() {
             });
         });
     }
-
+    /*========Contact Info Email and Phone Number========*/
+    $('#number-contact').text('(+1) 562 505 9708');
+    $('#email-contact').text('johnnypham944@gmail.com');
 });
 
 /*========Document Ready Function========*/
