@@ -53,8 +53,15 @@ $(window).on("load", function() {
         });
     }
     /*========Contact Info Email and Phone Number========*/
-    $('#number-contact').text('(+1) 562 505 9708');
-    $('#email-contact').text('johnnypham944@gmail.com');
+    var phoneNumberLink = $('<a>').attr('href', 'tel:5625059708');
+    var phoneNumber = '(+1) 562 505 9708';
+    $(phoneNumberLink).append(phoneNumber);
+    $('#number-contact').append(phoneNumberLink);
+
+    var emailLink = $('<a>').attr('href', 'mailto:johnnypham944@gmail.com');
+    var email = 'johnnypham944@gmail.com';
+    $(emailLink).append(email);
+    $('#email-contact').append(emailLink);
 });
 
 /*========Document Ready Function========*/
