@@ -30,9 +30,9 @@
 $(window).on("load", function() {
 
 
-    // $('modal-open').ontouchend = (e) => {
-    //     e.preventDefault();
-    // };
+    $('body.modal-open').ontouchend = (e) => {
+        e.preventDefault();
+    };
     /*========Preloader Setup========*/
     setTimeout(function(){
         $('.preloader').addClass('loaded');
