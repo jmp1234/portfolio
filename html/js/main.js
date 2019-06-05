@@ -29,7 +29,7 @@
 /*========Window Load Function========*/
 $(window).on("load", function() {
 
-    $('body').on('touchstart', (e) => {
+    $('body').on('touchend', (e) => {
       $('body').css('background-color', 'red');
       e.preventDefault()
     })
