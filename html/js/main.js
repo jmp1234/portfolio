@@ -89,9 +89,7 @@ $(function() {
 
     /*========Modal Close========*/
     $('.fa-close').on('click', function() {
-      $('.modal').hide();
-      $('.modal-backdrop').hide();
-      $('body').css('overflow', 'auto')
+        $('.modal').modal("hide")
     })
 
 
