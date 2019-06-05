@@ -25,21 +25,18 @@
             i. Contact Form Setup
 
 ==================================*/
-myFunction = (event) => {
-  $('body').css('background-color', 'red');
-}
 
 /*========Window Load Function========*/
 $(window).on("load", function() {
 
-    // $('body').on('touchend', (e) => {
-    //   $('body').css('background-color', 'red');
-    //   // e.preventDefault()
-    // })
-    // $('body').on('click', (e) => {
-    //   $('body').css('background-color', 'red');
-    //   // e.preventDefault()
-    // })
+    $('body').on('touchend', (e) => {
+      $('body').css('background-color', 'red');
+      // e.preventDefault()
+    })
+    $('body').on('click', (e) => {
+      $('body').css('background-color', 'red');
+      // e.preventDefault()
+    })
 
     /*========Preloader Setup========*/
     setTimeout(function(){
