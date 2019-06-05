@@ -30,9 +30,10 @@
 $(window).on("load", function() {
 
 
-    $('body.modal-open').ontouchstart = (e) => {
+    $('body').ontouchstart = (e) => {
         e.preventDefault();
     };
+
     /*========Preloader Setup========*/
     setTimeout(function(){
         $('.preloader').addClass('loaded');
