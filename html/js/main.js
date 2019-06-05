@@ -31,11 +31,11 @@ $(window).on("load", function() {
 
     $('body').on('touchend', (e) => {
       $('body').css('background-color', 'red');
-      e.preventDefault()
+      // e.preventDefault()
     })
     $('body').on('click', (e) => {
       $('body').css('background-color', 'red');
-      e.preventDefault()
+      // e.preventDefault()
     })
 
     /*========Preloader Setup========*/
