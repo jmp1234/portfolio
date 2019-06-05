@@ -38,7 +38,7 @@ $(window).on("load", function() {
     //   // e.preventDefault()
     // })
     // 1. Get a target element that you want to persist scrolling for (such as a modal/lightbox/flyout/nav).
-    const targetElement = document.querySelector(".modal-open");
+    const targetElement = document.querySelector(".modal");
 
 // 2. ...in some event handler after showing the target element...disable body scroll
     bodyScrollLock.disableBodyScroll(targetElement);

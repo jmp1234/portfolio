@@ -4737,9 +4737,6 @@ button.close {
   border: 0;
   -webkit-appearance: none; }
 
-/* .modal-open {
-  overflow: hidden;
-} */
 
 .modal {
   position: fixed;
