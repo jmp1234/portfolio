@@ -49,6 +49,7 @@ $(window).on("load", function() {
 // // 4. Useful if we have called disableBodyScroll for multiple target elements,
 // // and we just want a kill-switch to undo all that.
 //   bodyScrollLock.clearAllBodyScrollLocks();
+console.log('hi')
 
     /*========Preloader Setup========*/
     setTimeout(function(){
