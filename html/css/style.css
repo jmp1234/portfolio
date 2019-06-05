@@ -1728,6 +1728,13 @@ section.banner-blog .banner-caption h1 {
 .modal-content {
 	border-radius: 2px;
 }
+.fa-close {
+  font-size: 15px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+}
 .project-media{
   min-height:300px;
   /* background-size:cover; */
