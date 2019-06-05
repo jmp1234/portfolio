@@ -28,34 +28,6 @@
 
 /*========Window Load Function========*/
 $(window).on("load", function() {
-
-  let previousScrollY = 0;
-
-  $(document).on('show.bs.modal', () => {
-      previousScrollY = window.scrollY;
-      $('body').addClass('modal-opened').css({
-          marginTop: -previousScrollY,
-          overflow: 'hidden',
-          backgroundColor: 'red',
-          left: 0,
-          right: 0,
-          top: 0,
-          bottom: 0,
-          position: 'fixed',
-      });
-  }).on('hidden.bs.modal', () => {
-      $('body').removeClass('modal-opened').css({
-          marginTop: 0,
-          overflow: 'visible',
-          left: 'auto',
-          right: 'auto',
-          top: 'auto',
-          bottom: 'auto',
-          position: 'static',
-          backgroundColor: 'white'
-      });
-      window.scrollTo(0, previousScrollY);
-  });
     // $('modal-open').ontouchend = (e) => {
     //     e.preventDefault();
     // };
