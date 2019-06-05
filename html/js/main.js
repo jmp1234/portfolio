@@ -14,6 +14,7 @@
             a. Preloader Setup
             b. Portfolio Isotope Setup
         2. Document Ready Function
+            a. Modal Close
             a. ScrollIt Setup
             b. Navbar Scrolling Background
             c. Stats Counter Setup
@@ -85,6 +86,12 @@ $(function() {
     }
     homeHeight();
     wind.resize(homeHeight);
+
+    /*========Modal Close========*/
+    $('.fa-close').on('click', function() {
+        $('.modal').modal("hide")
+    })
+
 
     /*========ScrollIt Setup========*/
     $.scrollIt({
