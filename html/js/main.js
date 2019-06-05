@@ -29,10 +29,10 @@
 /*========Window Load Function========*/
 $(window).on("load", function() {
 
-
-    $('body').ontouchstart = (e) => {
-        e.preventDefault();
-    };
+    $('body').on('touchstart', (e) => {
+      $('body').css('background-color', 'red');
+      e.preventDefault()
+    })
 
     /*========Preloader Setup========*/
     setTimeout(function(){
