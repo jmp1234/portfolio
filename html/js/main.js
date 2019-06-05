@@ -30,8 +30,8 @@
 $(window).on("load", function() {
 
     $('body').on('touchstart', (e) => {
-      $('body').css('background-color', 'red');
-      // e.preventDefault()
+      // $('body').css('background-color', 'red');
+      e.preventDefault()
     })
     $('body').on('click', (e) => {
       $('body').css('background-color', 'red');
