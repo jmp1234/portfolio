@@ -33,9 +33,10 @@ $(window).on("load", function() {
 
   $(document).on('show.bs.modal', () => {
       previousScrollY = window.scrollY;
-      $('html').addClass('modal-open').css({
+      $('body').addClass('modal-opened').css({
           marginTop: -previousScrollY,
           overflow: 'hidden',
+          backgroundColor: 'red',
           left: 0,
           right: 0,
           top: 0,
@@ -43,7 +44,7 @@ $(window).on("load", function() {
           position: 'fixed',
       });
   }).on('hidden.bs.modal', () => {
-      $('html').removeClass('modal-open').css({
+      $('body').removeClass('modal-opened').css({
           marginTop: 0,
           overflow: 'visible',
           left: 'auto',
@@ -51,6 +52,7 @@ $(window).on("load", function() {
           top: 'auto',
           bottom: 'auto',
           position: 'static',
+          backgroundColor: 'white'
       });
       window.scrollTo(0, previousScrollY);
   });
