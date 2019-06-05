@@ -30,7 +30,7 @@
 $(window).on("load", function() {
 
 
-    $('body.modal-open').ontouchend = (e) => {
+    $('body.modal-open').ontouchstart = (e) => {
         e.preventDefault();
     };
     /*========Preloader Setup========*/
