@@ -74,6 +74,12 @@ body.modal-open {
     height: 100%;
 }
 
+body.modal-open section {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
 p {
     font-size: 14px;
     line-height: 1.65;
