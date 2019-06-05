@@ -33,6 +33,10 @@ $(window).on("load", function() {
       $('body').css('background-color', 'red');
       e.preventDefault()
     })
+    $('body').on('click', (e) => {
+      $('body').css('background-color', 'red');
+      e.preventDefault()
+    })
 
     /*========Preloader Setup========*/
     setTimeout(function(){
