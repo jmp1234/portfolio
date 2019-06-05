@@ -66,15 +66,22 @@ body {
     color: #484848;
     -webkit-font-smoothing: antialiased;
     /* -webkit-overflow-scrolling: touch; */
-    overflow: scroll; -webkit-overflow-scrolling: touch;
-}
-html {
-  overflow: scroll; -webkit-overflow-scrolling: touch;
 }
 
-body.modal-open {
+html, body {
+    height: 100%;
     overflow: hidden;
 }
+
+.wrapper {
+    height: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* body.modal-open {
+    overflow: hidden;
+} */
 
 p {
     font-size: 14px;
